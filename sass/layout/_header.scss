@@ -1,4 +1,26 @@
 header {
     background-color: $color-primary;
     color: white;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    & img {
+        width: 400px;
+        height: 300px;
+        
+    }
+    &-title {
+        display: flex;
+    }
+    & h1 {
+        width: 60%;
+        border: 3px solid black;
+        height: fit-content;
+    }
+    & h2 {
+        width: 100%;
+        border: 3px solid black;
+        height: fit-content;  
+    }
 }
