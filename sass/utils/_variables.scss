@@ -4,3 +4,12 @@ $color-primary: #f9ac67;
 $color-secondary: #ee6a59;
 
 $font-text: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+
+$breakpoints : (
+    sm-mobile: 300px,
+    sm-tablet: 600px,
+    md-tablet: 768px,
+    lg-tablet: 1000px,
+    desktop: 2000px
+);
