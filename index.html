@@ -3,20 +3,29 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/819f8521b8.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css" />
     <title>CV - Marie Dano</title>
   </head>
   <body>
     <header>
-      <img src="./images/IMG_0640.JPG" alt="Marie">
+      <div class="header-portrait">
+        <img src="./images/portrait.jpg" alt="Marie Dano">
+      </div>
       <div class="header-title">
         <h1>Marie Dano</h1>
         <h2>Conseillère en rénovation énergétique</h2>
       </div>
       <div class="contact">
-        <p class="contact__birth">Née le 5 mars 1994</p>
-        <p class="contact__phone">07 69 93 67 37</p>
-        <p class="contact__mail">mariedano35@yahoo.fr</p>
+        <div class="contact__details contact__birth">
+          <p><i class="fas fa-birthday-cake"></i> Née le 5 mars 1994</p>
+        </div>
+        <div class="contact__details contact__phone">
+          <p><i class="fas fa-mobile"></i> 07 69 93 67 37</p>
+        </div>
+        <div class="contact__details contact__mail">
+          <p><i class="fas fa-at"></i> mariedano35@yahoo.fr</p>
+        </div>
       </div>
     </header>
     <section class="main">
@@ -26,71 +35,337 @@
           <li>
             <div class="timeline-content">
               <div class="timeline-content__infos">
-                <p class="timeline-content__date">Depuis Avril 2019 à aujourd'hui</p>
-                <p class="timeline-content__location"> <a href="https://www.google.fr/maps/place/61340+Perche-en-Nocé/">Perche-en-Nocé</a></p>
+                <p class="timeline-content__date"><i class="fas fa-calendar-alt"></i>
+                  Depuis Avril 2019 à aujourd'hui
+                </p>
+                <p class="timeline-content__location">
+                  <a
+                    href="https://www.google.fr/maps/place/61340+Perche-en-Nocé/"
+                    ><i class="fas fa-map-marker-alt"></i> Perche-en-Nocé</a
+                  >
+                </p>
+              </div>
+              <div class="left">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"
+                  width="100"
+                  height="100"
+                >
+                  <g id="outline">
+                    <path
+                      d="M472,280c-10.285,0-18.285,6.957-21.023,9.688L413.785,312H384a8,8,0,0,0-8,8v16H358.777l-6.886-41.316a8,8,0,0,0-15.782,2.632L342.557,336h-23.62l-5.832-40.836a24,24,0,0,0-13.027-18.07l-24.5-12.25A8,8,0,0,0,272,264H240a8,8,0,0,0-3.578.844l-24.5,12.25A24,24,0,0,0,198.9,295.168L193.063,336h-23.62l6.448-38.684a8,8,0,1,0-15.782-2.632L153.223,336H136V320a8,8,0,0,0-8-8H98.215L61.023,289.688C58.285,286.957,50.285,280,40,280a24.027,24.027,0,0,0-24,24v96a8,8,0,0,0,5.469,7.59l2.531.844V464H16v16H496V464h-8V392.7l3.152-1.351A8,8,0,0,0,496,384V304A24.027,24.027,0,0,0,472,280ZM400,430.873,418.4,464H400ZM400,352h24a8,8,0,0,0,3.578-.844L448,340.945v14.621l-48,30ZM214.73,297.438a8.014,8.014,0,0,1,4.348-6.032L241.887,280h28.226l22.813,11.406a8.018,8.018,0,0,1,4.344,6.028L302.777,336H288V304a8,8,0,0,0-8-8H232a8,8,0,0,0-8,8v32H209.223ZM272,336H240V312h32Zm112,16v16H128V352Zm-80,33.371V384h48v80H281.062l6.536-52.285,9.371-9.371A23.841,23.841,0,0,0,304,385.371Zm-88.969,16.973,9.371,9.371L230.938,464H160V384h48v1.371A23.841,23.841,0,0,0,215.031,402.344ZM112,417.49,103.664,389.7a8.006,8.006,0,0,0-3.547-4.562L64,363.469V340.945l20.422,10.211A8,8,0,0,0,88,352h24Zm-72-3.724,25.469,8.488L77.4,464H40ZM94.035,464,79.691,413.8a8,8,0,0,0-5.16-5.391L32,394.234V304a8.011,8.011,0,0,1,8-8c4.188,0,8.793,3.98,10.039,5.336a7.912,7.912,0,0,0,1.844,1.523l40,24A8.014,8.014,0,0,0,96,328h24v8H89.887L59.578,320.844A8,8,0,0,0,48,328v40a8,8,0,0,0,3.883,6.859l37.344,22.407L109.246,464ZM128,464V384h16v80Zm119.062,0-7.125-56.992a7.98,7.98,0,0,0-2.281-4.664l-11.312-11.313a7.951,7.951,0,0,1-2.344-5.66V384h64v1.371a7.951,7.951,0,0,1-2.344,5.66l-11.312,11.313a7.987,7.987,0,0,0-2.282,4.664L264.937,464ZM368,464V384h16v80Zm68.707,0-34.023-61.242,57.554-35.973A8.006,8.006,0,0,0,464,360V328a8,8,0,0,0-11.578-7.156L422.113,336H392v-8h24a8.014,8.014,0,0,0,4.117-1.141l40-24a7.912,7.912,0,0,0,1.844-1.523C462.969,300.211,467.633,296,472,296a8.011,8.011,0,0,1,8,8v74.727l-51.152,21.921a8,8,0,0,0-4.61,9.293L437.754,464ZM472,464H454.247l-12.833-51.332L472,399.56Z"
+                    />
+                    <path
+                      d="M280,134.629V160a8,8,0,0,0,12.437,6.656L320.4,148.011A23.986,23.986,0,0,0,344,168h29.578l45.984,30.656A8,8,0,0,0,432,192V166.629A24.041,24.041,0,0,0,448,144V96a24.027,24.027,0,0,0-24-24H392V64a24.027,24.027,0,0,0-24-24H288a24.027,24.027,0,0,0-24,24v48A24.04,24.04,0,0,0,280,134.629ZM424,88a8.011,8.011,0,0,1,8,8v48a8.011,8.011,0,0,1-8,8,8,8,0,0,0-8,8v17.051l-35.563-23.707A8.005,8.005,0,0,0,376,152H344a8.011,8.011,0,0,1-8-8v-6.385L338.422,136H368a24.027,24.027,0,0,0,24-24V88Zm-88,32V96a8.011,8.011,0,0,1,8-8h32v24a8.011,8.011,0,0,1-8,8ZM280,64a8.011,8.011,0,0,1,8-8h80a8.011,8.011,0,0,1,8,8v8H344a24.027,24.027,0,0,0-24,24v33.052l-24,16V128a8,8,0,0,0-8-8,8.011,8.011,0,0,1-8-8Z"
+                    />
+                    <path
+                      d="M56,160v24a8,8,0,0,0,12.438,6.656L114.422,160H152a24.027,24.027,0,0,0,24-24V88a24.027,24.027,0,0,0-24-24H56A24.027,24.027,0,0,0,32,88v48A24.027,24.027,0,0,0,56,160ZM48,88a8.011,8.011,0,0,1,8-8h96a8.011,8.011,0,0,1,8,8v48a8.011,8.011,0,0,1-8,8H112a8.011,8.011,0,0,0-4.438,1.344L72,169.051V152a8,8,0,0,0-8-8H56a8.011,8.011,0,0,1-8-8Z"
+                    />
+                    <rect x="64" y="104" width="16" height="16" />
+                    <rect x="96" y="104" width="16" height="16" />
+                    <rect x="128" y="104" width="16" height="16" />
+                    <path
+                      d="M256,256a32,32,0,1,0-32-32A32.036,32.036,0,0,0,256,256Zm0-48a16,16,0,1,1-16,16A16.016,16.016,0,0,1,256,208Z"
+                    />
+                    <path
+                      d="M432,240a32,32,0,1,0,32-32A32.036,32.036,0,0,0,432,240Zm32-16a16,16,0,1,1-16,16A16.016,16.016,0,0,1,464,224Z"
+                    />
+                    <path
+                      d="M48,272a32,32,0,1,0-32-32A32.036,32.036,0,0,0,48,272Zm0-48a16,16,0,1,1-16,16A16.016,16.016,0,0,1,48,224Z"
+                    />
+                  </g>
+                </svg>
               </div>
               <h2>Conseillère en rénovation énergétique</h2>
               <p class="timeline-content__entreprise">SCIC Éco-Pertica</p>
               <p>
-                Accompagnement aux particuliers, aux collectivités et aux professionnels à la construction et la rénovation écologiques et à l’utilisation de matériaux biosourcés et locaux(chanvre, terre).
+                Accompagnement aux particuliers, aux collectivités et aux
+                professionnels à la construction et la rénovation écologiques et
+                à l’utilisation de matériaux biosourcés et locaux(chanvre,
+                terre).
               </p>
             </div>
           </li>
           <li>
             <div class="timeline-content">
               <div class="timeline-content__infos">
-                <p class="timeline-content__date">Juin 2018 à Février 2019</p>
-                <p class="timeline-content__location"> <a href="https://www.google.fr/maps/place/05300+Éourres/">Éourres</a></p>
+                <p class="timeline-content__date"><i class="fas fa-calendar-alt"></i> Juin 2018 à Février 2019</p>
+                <p class="timeline-content__location">
+                  <a href="https://www.google.fr/maps/place/05300+Éourres/"
+                    ><i class="fas fa-map-marker-alt"></i> Éourres</a
+                  >
+                </p>
+              </div>
+              <div class="right">
+                <svg
+                  height="512"
+                  viewBox="0 0 512 512"
+                  width="100"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g id="solid">
+                    <path
+                      d="m176 288h23.567l8-24h-63.567a8 8 0 0 1 0-16h68.9l13.333-40h-25.87a80.454 80.454 0 0 1 -80.363-80.363v-95.637h-88v320h165.188a40.622 40.622 0 0 1 -6.352-37.808l3.4-10.192h-18.236a8 8 0 0 1 0-16zm-72-24h-16a8 8 0 0 1 0-16h16a8 8 0 0 1 0 16zm32 40h-16a8 8 0 0 1 0-16h16a8 8 0 0 1 0 16z"
+                    />
+                    <path
+                      d="m200.363 192h35.182a30.153 30.153 0 0 1 41.067.144 87.982 87.982 0 0 1 80.062 63.856h19.326v-80h-218.036a64.076 64.076 0 0 0 42.399 16z"
+                    />
+                    <path
+                      d="m272.639 400h-33.278l-4.731 56.774a21.444 21.444 0 1 0 42.74 0z"
+                    />
+                    <path d="m136 32h240v32h-240z" />
+                    <path
+                      d="m248 160v-80h-112v47.637a63.951 63.951 0 0 0 8.763 32.363z"
+                    />
+                    <path d="m256 368h-8v16h16v-16z" />
+                    <path d="m392 176h88v80h-88z" />
+                    <path d="m264 80v80h216v-80h-96z" />
+                    <path
+                      d="m360 280a87.958 87.958 0 0 1 -37.462 72h157.462v-80h-120.37c.238 2.646.37 5.313.37 8z"
+                    />
+                    <path
+                      d="m269.47 209.709a14.2 14.2 0 0 0 -26.94 0l-36.514 109.543a24.88 24.88 0 0 0 23.604 32.748h42.38a71.668 71.668 0 0 0 24.236-4.208 25.257 25.257 0 0 0 3.738-3.08 24.744 24.744 0 0 0 6.01-25.461z"
+                    />
+                    <path d="m392 32h88v32h-88z" />
+                    <path
+                      d="m323.133 330.631a71.966 71.966 0 0 0 -36.892-121.207l34.923 104.767a41 41 0 0 1 1.969 16.44z"
+                    />
+                  </g>
+                </svg>
               </div>
               <h2>Service civique</h2>
               <p class="timeline-content__entreprise">LESA</p>
               <p>
-                Travaux de maçonnerie : enduits à base de terre crue, terre-paille, sol en terre crue, pierre jointée à la terre. Animation de chantiers participatifs, démonstrations. Communication et militantisme pour la diffusion de la construction écologique. Co-écriture d’un guide éthique et pratique à destination des élus.
+                Travaux de maçonnerie : enduits à base de terre crue,
+                terre-paille, sol en terre crue, pierre jointée à la terre.
+                Animation de chantiers participatifs, démonstrations.
+                Communication et militantisme pour la diffusion de la
+                construction écologique. Co-écriture d’un guide éthique et
+                pratique à destination des élus.
               </p>
             </div>
           </li>
           <li>
             <div class="timeline-content">
               <div class="timeline-content__infos">
-                <p class="timeline-content__date">Octobre 2017 à Août 2018</p>
-                <p class="timeline-content__location"> <a href="https://www.google.fr/maps/place/11310+Saissac/">Saissac</a></p>
+                <p class="timeline-content__date"><i class="fas fa-calendar-alt"></i> Octobre 2017 à Août 2018</p>
+                <p class="timeline-content__location">
+                  <a href="https://www.google.fr/maps/place/11310+Saissac/"
+                    ><i class="fas fa-map-marker-alt"></i> Saissac</a
+                  >
+                </p>
+              </div>
+              <div class="left">
+                <svg
+                  id="Solid"
+                  height="512"
+                  viewBox="0 0 512 512"
+                  width="512"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path d="m48 416h416v40h-416z" />
+                  <path
+                    d="m96 352a16 16 0 0 0 -16-16h-16a16 16 0 0 0 -16 16v7h48z"
+                  />
+                  <path d="m24 376h464v24h-464z" />
+                  <path
+                    d="m424 360h24a16 16 0 0 0 16-16v-40h-56v40a16 16 0 0 0 16 16z"
+                  />
+                  <path
+                    d="m410.88 288h16c0-1.945.474-2.608 2.891-5.127 2.926-3.049 7.349-7.655 7.349-16.207s-4.422-13.158-7.349-16.207c-2.417-2.519-2.891-3.182-2.891-5.128s.474-2.607 2.891-5.124c2.926-3.049 7.349-7.655 7.349-16.207h-16c0 1.945-.474 2.607-2.891 5.126-2.927 3.048-7.349 7.654-7.349 16.2s4.422 13.159 7.349 16.208c2.417 2.519 2.891 3.182 2.891 5.127s-.474 2.608-2.891 5.127c-2.929 3.054-7.349 7.66-7.349 16.212z"
+                  />
+                  <path
+                    d="m442.88 288h16c0-1.945.474-2.608 2.891-5.127 2.926-3.049 7.349-7.655 7.349-16.207s-4.422-13.158-7.349-16.207c-2.417-2.519-2.891-3.182-2.891-5.128s.474-2.607 2.891-5.124c2.926-3.049 7.349-7.655 7.349-16.207h-16c0 1.945-.474 2.607-2.891 5.126-2.927 3.048-7.349 7.654-7.349 16.2s4.422 13.159 7.349 16.208c2.417 2.519 2.891 3.182 2.891 5.127s-.474 2.608-2.891 5.127c-2.929 3.054-7.349 7.66-7.349 16.212z"
+                  />
+                  <circle cx="256" cy="104" r="48" />
+                  <path
+                    d="m368 360 16-160h-256l16 160zm-112-104a24 24 0 1 1 -24 24 24 24 0 0 1 24-24z"
+                  />
+                  <path
+                    d="m312 152h-112a32 32 0 0 0 -32 32h176a32 32 0 0 0 -32-32z"
+                  />
+                </svg>
               </div>
               <h2>Activité indépendante</h2>
               <p>
-                Missions d’architecture : conseil au particulier, relevés, conception, production de plans et de visuels... Activités d’artisanat : ossature bois, isolation, bardage, maçonnerie, enduits...
+                Missions d’architecture : conseil au particulier, relevés,
+                conception, production de plans et de visuels... Activités
+                d’artisanat : ossature bois, isolation, bardage, maçonnerie,
+                enduits...
               </p>
             </div>
           </li>
           <li>
             <div class="timeline-content">
               <div class="timeline-content__infos">
-                <p class="timeline-content__date">Février à Novembre 2017</p>
-                <p class="timeline-content__location"> <a href="https://www.google.fr/maps/place/11200+Lézignan-Corbières/">Lézignan-Corbières</a></p>
+                <p class="timeline-content__date"><i class="fas fa-calendar-alt"></i> Février à Novembre 2017</p>
+                <p class="timeline-content__location">
+                  <a
+                    href="https://www.google.fr/maps/place/11200+Lézignan-Corbières/"
+                    ><i class="fas fa-map-marker-alt"></i> Lézignan-Corbières</a
+                  >
+                </p>
               </div>
-              <h2>Formation qualifiante d'ouvrier professionnel de l'écoconstruction</h2>
+              <div class="right">
+                <svg
+                  version="1.1"
+                  id="Capa_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  viewBox="0 0 446.909 446.909"
+                  style="enable-background: new 0 0 446.909 446.909"
+                  xml:space="preserve"
+                >
+                  <g>
+                    <g>
+                      <path
+                        d="M239.453,141.561c-0.608-0.656-46.112-49.632-46.704-50.272c-10.528-11.376-18.064-5.024-25.136-19.712
+                      c-6.992-15.104-21.232-31.952-39.328-40.944c-4.944-2.352-10.32,2.064-9.136,7.984c3.232,15.008,12.272,24.048,0.208,34.592
+                      c-3.76,3.376-23.52,8.912-28.592,10.544l0.128,0.048c-31.888,9.712-45.968,28.368-60.112,44.096
+                      c-8.256,9.76-16.704,0.912-25.392,8.448c-9.36,8.224-5.472,21.584,3.6,27.168c15.344,9.456,19.504,23.856,28.944,36.336
+                      c13.856,18.4,32.8,34.864,54.048,29.152c27.776-7.712,81.456-23.776,106.72-31.152c17.04-4.976,27.856-20.016,40.656-33.776
+                      C245.165,157.817,245.261,147.801,239.453,141.561z M170.397,149.497c-10.288,9.456-49.824,28.736-88.464,35.168
+                      c-5.392,0.8-11.104-1.344-14.784-6.24c-7.488-9.92-2.688-24.88,8.88-27.728c24.688-7.344,48.576-19.008,70.72-35.28
+                      c8.416-6.256,20.048-4.576,26.576,4.176C180.205,128.713,178.909,142.105,170.397,149.497z"
+                      />
+                    </g>
+                  </g>
+                  <g>
+                    <g>
+                      <path
+                        d="M262.845,164.633c-37.504,38.384-51.216,46.096-59.648,48.56c-7.696,2.256-25.232,7.44-46.64,13.776
+                      c-10.8,3.2-22.48,6.656-34.336,10.176l8.672,33.088v1.248l32.832-8.592l8.592,32.832l32.832-8.592l8.592,32.832l32.832-8.592
+                      l8.592,32.832l32.832-8.592l8.592,32.832l32.832-8.592l8.592,32.832l32.832-8.592l8.592,32.832l67.472-68.128L262.845,164.633z
+                      M390.045,358.137c-5.632-5.68-5.552-14.896,0.128-20.544c5.76-5.632,14.896-5.584,20.544,0.144
+                      c5.68,5.712,5.6,14.896-0.128,20.496C404.877,363.849,395.709,363.769,390.045,358.137z"
+                      />
+                    </g>
+                  </g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                </svg>
+              </div>
+              <h2>
+                Formation qualifiante d'ouvrier professionnel de
+                l'écoconstruction
+              </h2>
               <p class="timeline-content__entreprise">Batipole en Limouxin</p>
               <p>
-                Exécuter des travaux de construction (neuf et rénovation) en choisissant et mettant en œuvre des solutions et matériaux adaptés aux exigences du développement durable. Certifications Propaille, AcquisTerre, Praxibat. 10 semaines de stage (entreprises Bois et Paille et Charpenterie des Corbières)
+                Exécuter des travaux de construction (neuf et rénovation) en
+                choisissant et mettant en œuvre des solutions et matériaux
+                adaptés aux exigences du développement durable. Certifications
+                Propaille, AcquisTerre, Praxibat. 10 semaines de stage
+                (entreprises Bois et Paille et Charpenterie des Corbières)
               </p>
             </div>
           </li>
           <li>
             <div class="timeline-content">
               <div class="timeline-content__infos">
-                <p class="timeline-content__date">De 2015 à 2018</p>
-                <p class="timeline-content__location"> <a href="https://www.google.fr/maps/place/Rennes/">Rennes</a></p>
+                <p class="timeline-content__date"><i class="fas fa-calendar-alt"></i> De 2015 à 2018</p>
+                <p class="timeline-content__location">
+                  <a href="https://www.google.fr/maps/place/Rennes/"><i class="fas fa-map-marker-alt"></i> Rennes</a>
+                </p>
               </div>
-              <h2>Bénévolat</h2> 
+              <div class="left">
+                <svg
+                  height="456pt"
+                  viewBox="-65 0 455 456"
+                  width="456pt"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="m76.320312 456h98.015626c27.351562 0 52.660156-15.882812 66.046874-41.601562l84.785157-162.835938-4.785157-3.917969c-.089843-.078125-.179687-.15625-.265624-.234375-7.367188-6.929687-17.28125-10.488281-27.371094-9.816406-10.304688.785156-19.820313 5.820312-26.269532 13.898438l-24.457031 29.773437c-1.875 2.28125-4.984375 3.140625-7.765625 2.144531-2.785156-.996094-4.640625-3.628906-4.644531-6.585937l-.140625-204.832031c-.011719-13.960938-10.410156-25.316407-23.183594-25.316407-12.492187 0-22.699218 10.828125-23.171875 24.34375 0 20.6875-.011719 43.207031-.015625 64.640625-.007812 48.476563-.015625 90.316406 0 94.375.007813 1.851563-.726562 3.628906-2.035156 4.9375-1.3125 1.304688-3.089844 2.035156-4.941406 2.027344h-.023438c-1.847656.015625-3.621094-.707031-4.9375-2.003906-1.3125-1.296875-2.054687-3.066406-2.0625-4.910156-.015625-4.085938-.007812-45.902344 0-94.402344 0-20.921875.007813-42.890625.011719-63.171875-.011719-.164063-.019531-.316407-.019531-.480469 0-.398438.007812-.78125.019531-1.179688 0-17.027343 0-32.753906 0-45.628906.007813-13.957031-10.394531-25.222656-23.175781-25.222656h-.710938c-12.78125 0-23.386718 11.175781-23.386718 25.144531v204.972657c0 3.863281-3.136719 7-7 7-3.867188 0-7-3.136719-7-7v-178.472657c0-13.96875-10.183594-25.332031-22.964844-25.332031-12.855469 0-23.035156 11.363281-23.035156 25.332031v178.472657c0 3.863281-3.136719 7-7 7-3.867188 0-7-3.136719-7-7v-105.203126c0-13.972656-10.628907-24.914062-23.414063-24.914062h-.667969c-12.75 0-23.152344 11.074219-23.183594 25-.132812 57.488281-.050781 158.84375.035157 249.570312.039062 44.953126 34.007812 81.429688 75.714843 81.429688zm0 0"
+                  />
+                </svg>
+              </div>
+              <h2>Bénévolat</h2>
               <p>
-                AccroTerre : association pour la diffusion de la terre crue comme matériau de construction
+                AccroTerre : association pour la diffusion de la terre crue
+                comme matériau de construction
               </p>
             </div>
           </li>
           <li>
             <div class="timeline-content">
               <div class="timeline-content__infos">
-                <p class="timeline-content__date">Juillet 2014 à Juin 2015</p>
-                <p class="timeline-content__location"> <a href="https://www.google.fr/maps/place/Autonomous+University+of+Yucatan/">Mérida, Mexique</a></p>
+                <p class="timeline-content__date"><i class="fas fa-calendar-alt"></i> Juillet 2014 à Juin 2015</p>
+                <p class="timeline-content__location">
+                  <a
+                    href="https://www.google.fr/maps/place/Autonomous+University+of+Yucatan/"
+                    ><i class="fas fa-map-marker-alt"></i> Mérida, Mexique</a
+                  >
+                </p>
+              </div>
+              <div class="right">
+                <svg
+                  version="1.1"
+                  id="Capa_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  width="30.696px"
+                  height="30.696px"
+                  viewBox="0 0 30.696 30.696"
+                  style="enable-background: new 0 0 30.696 30.696"
+                  xml:space="preserve"
+                >
+                  <g>
+                    <path
+                      d="M28.278,2.705l-0.462-0.48l-0.465,0.479c-0.39,0.401-0.771,0.792-1.146,1.172c-0.919-0.826-3.063-2.422-5.822-2.31
+                    l-0.358,0.015l-0.177,0.313C16.646,7.556,4.765,15.648,3.376,16.581c-0.532,0.189-1.12,0.558-1.746,1.206
+                    c-2.257,2.343-1.889,5.903-0.59,8.221c1.116,1.993,2.847,3.129,4.673,3.129c0.319,0,0.642-0.034,0.965-0.105
+                    c0.896-0.197,1.586-0.646,2.114-1.258c0.884-0.906,5.29-5.388,9.507-9.1c0.436,0.517,1.611,2.004,2.09,3.567
+                    c0.591,1.939,0.85,4.909,0.85,4.909l0.967-2.102l1.398,0.441c0,0-0.205-2.709-1.013-4.27c-0.806-1.561-1.936-3.171-1.936-3.171
+                    s2.086,1.051,3.278,2.363c1.193,1.314,2.28,3.978,2.28,3.978l0.793-1.55l2.289-0.539c0,0-3.545-3.217-4.396-3.822
+                    c-0.756-0.539-2.845-1.89-3.42-2.477c3.328-2.656,6.388-4.736,6.652-4.886c1.466-0.829,2.339-1.943,2.525-3.218
+                    C30.888,6.33,30.088,4.581,28.278,2.705z M8.866,18.348c0.418,2.378,0.789,8.707-2.467,9.425c-1.899,0.419-3.433-0.962-4.235-2.395
+                    c-1.071-1.915-1.405-4.826,0.396-6.695c0.901-0.938,1.722-1.203,2.441-0.795c0.475,0.27,0.871,0.773,1.17,1.359
+                    c-0.468,0.454-1.455,1.373-3.274,2.92l-0.288,0.246l0.073,0.372c0.48,2.396,1.791,2.698,2.332,2.718
+                    c1.262,0.025,2.461-1.129,2.954-2.922c0.42-1.525-0.39-4.71-2.329-5.813c-0.044-0.026-0.091-0.05-0.141-0.076
+                    c1.684-1.171,4.497-3.203,7.324-5.548c1.148,0.216,2.652,0.704,3.595,1.796c-5.007,4.09-7.034,4.662-7.06,4.667L8.76,17.743
+                    L8.866,18.348z M6.654,20.568c0.152,0.644,0.184,1.257,0.07,1.669c-0.355,1.292-1.105,1.978-1.643,1.978
+                    c-0.008,0-0.015,0-0.022-0.002c-0.43-0.015-0.802-0.5-1.028-1.318C5.287,21.82,6.121,21.067,6.654,20.568z M10.184,24.545
+                    c0.432-2.291,0.182-4.8,0.034-5.885c0.942-0.396,3.099-1.526,6.893-4.615c0.576,1.168,0.831,2.305,0.94,3.135
+                    C15.213,19.637,12.218,22.529,10.184,24.545z M15.875,8.469c2.024-1.887,3.821-3.838,4.903-5.618
+                    c2.076,0.05,3.752,1.276,4.513,1.942c-2.242,2.242-4.212,4.096-5.931,5.627C18.242,9.036,16.93,8.576,15.875,8.469z M29.383,7.714
+                    c-0.129,0.879-0.762,1.647-1.886,2.284c-0.407,0.23-3.188,2.142-6.24,4.54c-0.008-0.595-0.18-1.45-1.158-3.043
+                    c2.167-1.926,4.718-4.35,7.704-7.405C29.002,5.462,29.533,6.68,29.383,7.714z"
+                    />
+                  </g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                </svg>
               </div>
               <h2>Échange universitaire</h2>
               <p class="timeline-content__entreprise">Fauady</p>
@@ -99,12 +374,67 @@
           <li>
             <div class="timeline-content">
               <div class="timeline-content__infos">
-                <p class="timeline-content__date">2011 à 2016</p>
-                <p class="timeline-content__location"> <a href="https://www.google.fr/maps/place/Rennes/">Rennes</a></p>
+                <p class="timeline-content__date"><i class="fas fa-calendar-alt"></i> De 2011 à 2016</p>
+                <p class="timeline-content__location">
+                  <a href="https://www.google.fr/maps/place/Rennes/"><i class="fas fa-map-marker-alt"></i> Rennes</a>
+                </p>
+              </div>
+              <div class="left">
+                <svg
+                  version="1.1"
+                  id="Capa_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  x="0px"
+                  y="0px"
+                  width="30.696px"
+                  height="30.696px"
+                  viewBox="0 0 30.696 30.696"
+                  style="enable-background: new 0 0 30.696 30.696"
+                  xml:space="preserve"
+                >
+                  <g>
+                    <path
+                      d="M28.278,2.705l-0.462-0.48l-0.465,0.479c-0.39,0.401-0.771,0.792-1.146,1.172c-0.919-0.826-3.063-2.422-5.822-2.31
+                    l-0.358,0.015l-0.177,0.313C16.646,7.556,4.765,15.648,3.376,16.581c-0.532,0.189-1.12,0.558-1.746,1.206
+                    c-2.257,2.343-1.889,5.903-0.59,8.221c1.116,1.993,2.847,3.129,4.673,3.129c0.319,0,0.642-0.034,0.965-0.105
+                    c0.896-0.197,1.586-0.646,2.114-1.258c0.884-0.906,5.29-5.388,9.507-9.1c0.436,0.517,1.611,2.004,2.09,3.567
+                    c0.591,1.939,0.85,4.909,0.85,4.909l0.967-2.102l1.398,0.441c0,0-0.205-2.709-1.013-4.27c-0.806-1.561-1.936-3.171-1.936-3.171
+                    s2.086,1.051,3.278,2.363c1.193,1.314,2.28,3.978,2.28,3.978l0.793-1.55l2.289-0.539c0,0-3.545-3.217-4.396-3.822
+                    c-0.756-0.539-2.845-1.89-3.42-2.477c3.328-2.656,6.388-4.736,6.652-4.886c1.466-0.829,2.339-1.943,2.525-3.218
+                    C30.888,6.33,30.088,4.581,28.278,2.705z M8.866,18.348c0.418,2.378,0.789,8.707-2.467,9.425c-1.899,0.419-3.433-0.962-4.235-2.395
+                    c-1.071-1.915-1.405-4.826,0.396-6.695c0.901-0.938,1.722-1.203,2.441-0.795c0.475,0.27,0.871,0.773,1.17,1.359
+                    c-0.468,0.454-1.455,1.373-3.274,2.92l-0.288,0.246l0.073,0.372c0.48,2.396,1.791,2.698,2.332,2.718
+                    c1.262,0.025,2.461-1.129,2.954-2.922c0.42-1.525-0.39-4.71-2.329-5.813c-0.044-0.026-0.091-0.05-0.141-0.076
+                    c1.684-1.171,4.497-3.203,7.324-5.548c1.148,0.216,2.652,0.704,3.595,1.796c-5.007,4.09-7.034,4.662-7.06,4.667L8.76,17.743
+                    L8.866,18.348z M6.654,20.568c0.152,0.644,0.184,1.257,0.07,1.669c-0.355,1.292-1.105,1.978-1.643,1.978
+                    c-0.008,0-0.015,0-0.022-0.002c-0.43-0.015-0.802-0.5-1.028-1.318C5.287,21.82,6.121,21.067,6.654,20.568z M10.184,24.545
+                    c0.432-2.291,0.182-4.8,0.034-5.885c0.942-0.396,3.099-1.526,6.893-4.615c0.576,1.168,0.831,2.305,0.94,3.135
+                    C15.213,19.637,12.218,22.529,10.184,24.545z M15.875,8.469c2.024-1.887,3.821-3.838,4.903-5.618
+                    c2.076,0.05,3.752,1.276,4.513,1.942c-2.242,2.242-4.212,4.096-5.931,5.627C18.242,9.036,16.93,8.576,15.875,8.469z M29.383,7.714
+                    c-0.129,0.879-0.762,1.647-1.886,2.284c-0.407,0.23-3.188,2.142-6.24,4.54c-0.008-0.595-0.18-1.45-1.158-3.043
+                    c2.167-1.926,4.718-4.35,7.704-7.405C29.002,5.462,29.533,6.68,29.383,7.714z"
+                    />
+                  </g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                  <g></g>
+                </svg>
               </div>
               <h2>Diplome d'état en architecture</h2>
               <p class="timeline-content__entreprise">Ensab</p>
-              
             </div>
           </li>
           <h2 id="sep">Compétences</h2>
@@ -113,7 +443,9 @@
               <h2>Lorem ipsum dolor sit amet.</h2>
               <p class="timeline-content__entreprise">Lorem, ipsum dolor.</p>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam neque dicta unde quo qui id, possimus maxime perferendis ex libero?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+                neque dicta unde quo qui id, possimus maxime perferendis ex
+                libero?
               </p>
             </div>
           </li>
@@ -122,7 +454,9 @@
               <h2>Lorem ipsum dolor sit amet.</h2>
               <p class="timeline-content__entreprise">Lorem, ipsum dolor.</p>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam neque dicta unde quo qui id, possimus maxime perferendis ex libero?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+                neque dicta unde quo qui id, possimus maxime perferendis ex
+                libero?
               </p>
             </div>
           </li>
@@ -131,7 +465,9 @@
               <h2>Lorem ipsum dolor sit amet.</h2>
               <p class="timeline-content__entreprise">Lorem, ipsum dolor.</p>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam neque dicta unde quo qui id, possimus maxime perferendis ex libero?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+                neque dicta unde quo qui id, possimus maxime perferendis ex
+                libero?
               </p>
             </div>
           </li>
@@ -140,7 +476,9 @@
               <h2>Lorem ipsum dolor sit amet.</h2>
               <p class="timeline-content__entreprise">Lorem, ipsum dolor.</p>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam neque dicta unde quo qui id, possimus maxime perferendis ex libero?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+                neque dicta unde quo qui id, possimus maxime perferendis ex
+                libero?
               </p>
             </div>
           </li>
@@ -149,7 +487,9 @@
               <h2>Lorem ipsum dolor sit amet.</h2>
               <p class="timeline-content__entreprise">Lorem, ipsum dolor.</p>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam neque dicta unde quo qui id, possimus maxime perferendis ex libero?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+                neque dicta unde quo qui id, possimus maxime perferendis ex
+                libero?
               </p>
             </div>
           </li>
@@ -158,7 +498,9 @@
               <h2>Lorem ipsum dolor sit amet.</h2>
               <p class="timeline-content__entreprise">Lorem, ipsum dolor.</p>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam neque dicta unde quo qui id, possimus maxime perferendis ex libero?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+                neque dicta unde quo qui id, possimus maxime perferendis ex
+                libero?
               </p>
             </div>
           </li>
@@ -167,7 +509,9 @@
               <h2>Lorem ipsum dolor sit amet.</h2>
               <p class="timeline-content__entreprise">Lorem, ipsum dolor.</p>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam neque dicta unde quo qui id, possimus maxime perferendis ex libero?
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+                neque dicta unde quo qui id, possimus maxime perferendis ex
+                libero?
               </p>
             </div>
           </li>
