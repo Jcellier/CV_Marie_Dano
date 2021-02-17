@@ -1,15 +1,15 @@
-$bg-primary: #415A4E;
-$bg-secondary: #CBDBCD;
+$bg-primary: #415a4e;
+$bg-secondary: #cbdbcd;
 $color-primary: #fff;
 $color-secondary: #000000;
 
-$font-text: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+$font-text: "Segoe UI", sans-serif;
 
-
-$breakpoints : (
-    sm-mobile: 300px,
-    sm-tablet: 600px,
-    md-tablet: 768px,
-    lg-tablet: 1000px,
-    desktop: 2000px
+$breakpoints: (
+  sm-mobile: 300px,
+  sm-tablet: 600px,
+  md-tablet: 768px,
+  lg-tablet: 1000px,
+  md-desktop: 1650px,
+  desktop: 2000px,
 );

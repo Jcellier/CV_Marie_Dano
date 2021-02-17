@@ -1,5 +1,29 @@
 @mixin desktop {
-    @media only screen and (min-width: map-get($breakpoints, md-tablet)){
-        @content;
-    }
+  @media only screen and (min-width: map-get($breakpoints, lg-tablet)) {
+    @content;
   }
+}
+
+@mixin md-desktop {
+  @media screen and (min-width: map-get($breakpoints, lg-tablet)) and (max-width: map-get($breakpoints, md-desktop)) {
+    @content;
+  }
+}
+
+@mixin sm-desktop {
+  @media screen and (min-width: map-get($breakpoints, md-tablet)) and (max-width: map-get($breakpoints, lg-tablet)) {
+    @content;
+  }
+}
+
+@mixin md-phone {
+  @media screen and (min-width: map-get($breakpoints, sm-tablet)) and (max-width: map-get($breakpoints, md-tablet)) {
+    @content;
+  }
+}
+
+@mixin sm-phone {
+  @media screen and (min-width: map-get($breakpoints, sm-mobile)) and (max-width: map-get($breakpoints, sm-tablet)) {
+    @content;
+  }
+}

@@ -41,7 +41,7 @@
     font-size: 18px;
     line-height: 30px;
     font-weight: 300;
-    text-align: justify;
+    //text-align: justify;
   }
   &__infos {
     font-size: 12px;
@@ -89,21 +89,30 @@
     }
     &-skills {
       margin-top: 150px;
+      @include desktop {
+        margin-top: 0px;
+        visibility: collapse;
+      }
+      @include md-desktop {
+        margin-top: 100px;
+        visibility: collapse;
+      }
     }
     & ul li {
       width: 70%;
       position: relative;
       margin-bottom: 50px;
-
+      @include md-desktop {
+        width: 50%;
+      }
       &:nth-child(odd) {
         float: left;
         clear: right;
         transform: translateX(-30px);
         border-radius: 20px 0px 20px 20px;
         right: 200px;
-        &::before {
-          transform: translate(50%, -50%);
-          right: -70px;
+        @include md-desktop {
+          right: 30px;
         }
       }
       &:nth-child(even) {
@@ -112,19 +121,9 @@
         transform: translateX(30px);
         border-radius: 0px 20px 20px 20px;
         left: 200px;
-        &::before {
-          transform: translate(-50%, -50%);
-          left: -70px;
+        @include md-desktop {
+          left: 30px;
         }
-      }
-      &::before {
-        content: "";
-        position: absolute;
-        height: 20px;
-        width: 20px;
-        border-radius: 50%;
-        background-color: gray;
-        top: 0px;
       }
       &:hover .right,
       :hover .left {
@@ -138,6 +137,12 @@
       justify-content: space-between;
       position: absolute;
       top: -30px;
+      @include md-desktop {
+        p {
+          font-size: 0.8rem;
+          font-weight: bolder;
+        }
+      }
     }
   }
   #sep {
@@ -153,6 +158,12 @@
     border-radius: 8px;
     right: 290px;
     top: 1650px;
+    @include md-desktop {
+      top: 1950px;
+      position: absolute;
+      z-index: 1;
+      width: 250px;
+    }
   }
   .left {
     height: 70px;
@@ -162,6 +173,9 @@
     background: $bg-primary;
     border-radius: 50%;
     top: -20px;
+    @include md-desktop {
+      left: 425px;
+    }
     &:hover {
       background-color: darken($bg-primary, 10);
     }
@@ -175,6 +189,9 @@
     background: $bg-primary;
     border-radius: 50%;
     top: -20px;
+    @include md-desktop {
+      right: 425px;
+    }
     &:hover {
       background-color: darken($bg-primary, 10);
     }
@@ -187,5 +204,154 @@
     left: 12px;
     top: 10px;
     fill: white;
+  }
+}
+
+.timeline {
+  & > h2 {
+    @include sm-desktop {
+      font-size: 4rem;
+      margin-bottom: 10px;
+    }
+    @include md-phone {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+    @include sm-phone {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+  }
+  &-content {
+    @include sm-desktop {
+      display: flex;
+      flex-direction: column;
+    }
+    @include md-phone {
+      display: flex;
+      flex-direction: column;
+    }
+    @include sm-phone {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  &-content__infos p,
+  &-content__location a {
+    @include sm-desktop {
+      color: white;
+    }
+    @include md-phone {
+      color: white;
+    }
+    @include sm-phone {
+      color: white;
+    }
+  }
+}
+
+.left,
+.right {
+  @include sm-desktop {
+    fill: white;
+    position: absolute;
+    left: 500px;
+  }
+  @include md-phone {
+    fill: white;
+    position: absolute;
+    left: 400px;
+  }
+  @include sm-phone {
+    fill: white;
+    position: relative;
+    display: none;
+  }
+}
+
+svg {
+  @include sm-desktop {
+    fill: white;
+    width: 60px;
+    height: 60px;
+  }
+  @include md-phone {
+    fill: white;
+    width: 60px;
+    height: 60px;
+  }
+  @include sm-phone {
+    fill: white;
+    width: 40px;
+    height: 40px;
+  }
+}
+
+#sep {
+  @include sm-desktop {
+    font-size: 4rem;
+    margin-bottom: 10px;
+  }
+  @include md-phone {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+  @include sm-phone {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+}
+
+.timeline ul li {
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+.timeline ul li.in-view {
+  transform: none;
+  visibility: visible;
+  opacity: 1;
+}
+#do-not-display {
+  visibility: collapse;
+  margin-top: 80px;
+  @include md-desktop {
+    margin-top: 160px;
+  }
+  @include sm-desktop {
+    margin-top: -50px;
+  }
+  @include md-phone {
+    margin-top: -50px;
+  }
+  @include sm-phone {
+    margin-top: -50px;
+  }
+}
+
+.timeline ul li:nth-child(odd) {
+  transform: translate3d(-30px, 0, 0);
+  @include sm-desktop {
+    transform: translate3d(0px, 0, 0);
+  }
+  @include md-phone {
+    transform: translate3d(0px, 0, 0);
+  }
+  @include sm-phone {
+    transform: translate3d(0px, 0, 0);
+  }
+}
+
+.timeline ul li:nth-child(even) {
+  transform: translate3d(30px, 0, 0);
+  @include sm-desktop {
+    transform: translate3d(0px, 0, 0);
+  }
+  @include md-phone {
+    transform: translate3d(0px, 0, 0);
+  }
+  @include sm-phone {
+    transform: translate3d(0px, 0, 0);
   }
 }
